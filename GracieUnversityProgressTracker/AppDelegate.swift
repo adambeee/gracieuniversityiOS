@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  GracieUnversityProgressTracker
+//  GracieUnversityProgressTracker - ECE 435 Final Project
 //
 //  Created by Adam Baca on 4/26/17.
 //  Copyright © 2017 Adam Baca. All rights reserved.
