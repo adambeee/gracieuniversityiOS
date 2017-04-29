@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1284" y="-732.68365817091455"/>
+            <point key="canvasLocation" x="1284" y="-951"/>
         </scene>
         <!--Gracie University-->
         <scene sceneID="wg7-f3-ORb">
@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1284" y="0.0"/>
+            <point key="canvasLocation" x="1284" y="-252"/>
         </scene>
         <!--Class Schedule-->
         <scene sceneID="tmj-Og-BXd">
@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bLS-rS-cbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1295" y="696"/>
+            <point key="canvasLocation" x="1284" y="478"/>
         </scene>
         <!--Settings-->
         <scene sceneID="JKb-wj-oR5">
@@ -122,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5lQ-oD-yW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1314" y="1399"/>
+            <point key="canvasLocation" x="1284" y="1236"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
