@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F66D09331EB55E45009A38F7 /* RegularClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D09321EB55E45009A38F7 /* RegularClassesTableViewController.swift */; };
 		F66D09351EB55EAE009A38F7 /* ReflexDevelopmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D09341EB55EAE009A38F7 /* ReflexDevelopmentTableViewController.swift */; };
+		F6872E361EB83CA600636BF9 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6872E351EB83CA600636BF9 /* ThirdViewController.swift */; };
+		F6872E381EB83CB400636BF9 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6872E371EB83CB400636BF9 /* FourthViewController.swift */; };
 		F69E2BDC1EB191BF008D586E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69E2BDB1EB191BF008D586E /* AppDelegate.swift */; };
 		F69E2BDE1EB191BF008D586E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69E2BDD1EB191BF008D586E /* FirstViewController.swift */; };
 		F69E2BE01EB191BF008D586E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69E2BDF1EB191BF008D586E /* SecondViewController.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		F66D09321EB55E45009A38F7 /* RegularClassesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularClassesTableViewController.swift; sourceTree = "<group>"; };
 		F66D09341EB55EAE009A38F7 /* ReflexDevelopmentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReflexDevelopmentTableViewController.swift; sourceTree = "<group>"; };
+		F6872E351EB83CA600636BF9 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		F6872E371EB83CB400636BF9 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		F69E2BD81EB191BF008D586E /* GracieUnversityProgressTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GracieUnversityProgressTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69E2BDB1EB191BF008D586E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F69E2BDD1EB191BF008D586E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				F69E2BDB1EB191BF008D586E /* AppDelegate.swift */,
 				F69E2BDD1EB191BF008D586E /* FirstViewController.swift */,
 				F69E2BDF1EB191BF008D586E /* SecondViewController.swift */,
+				F6872E351EB83CA600636BF9 /* ThirdViewController.swift */,
+				F6872E371EB83CB400636BF9 /* FourthViewController.swift */,
 				F69E2BE11EB191BF008D586E /* Main.storyboard */,
 				F69E2BE41EB191BF008D586E /* Assets.xcassets */,
 				F69E2BE61EB191BF008D586E /* LaunchScreen.storyboard */,
@@ -149,7 +155,9 @@
 				F69E2BE01EB191BF008D586E /* SecondViewController.swift in Sources */,
 				F66D09331EB55E45009A38F7 /* RegularClassesTableViewController.swift in Sources */,
 				F69E2BDC1EB191BF008D586E /* AppDelegate.swift in Sources */,
+				F6872E381EB83CB400636BF9 /* FourthViewController.swift in Sources */,
 				F69E2BDE1EB191BF008D586E /* FirstViewController.swift in Sources */,
+				F6872E361EB83CA600636BF9 /* ThirdViewController.swift in Sources */,
 				F66D09351EB55EAE009A38F7 /* ReflexDevelopmentTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
