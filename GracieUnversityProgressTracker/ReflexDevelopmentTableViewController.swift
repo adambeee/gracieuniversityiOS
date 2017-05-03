@@ -11,11 +11,7 @@ import UIKit
 class ReflexDevelopmentTableViewController: UITableViewController {
 
     //this should get the classes from the database into an array
-    let reflexDevelopmentClassArray = ["Apple", "Apricot", "Banana", "Blueberry", "Cantaloupe", "Cherry",
-                             "Clementine", "Coconut", "Cranberry", "Fig", "Grape", "Grapefruit",
-                             "Kiwi fruit", "Lemon", "Lime", "Lychee", "Mandarine", "Mango",
-                             "Melon", "Nectarine", "Olive", "Orange", "Papaya", "Peach",
-                             "Pear", "Pineapple", "Raspberry", "Strawberry"]
+    let reflexDevelopmentClassArray = ["RD 1", "RD 2", "RD 3", "RD 4", "RD 5", "RD 6","RD 7", "RD 8", "RD 9", "RD 10"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +32,7 @@ class ReflexDevelopmentTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

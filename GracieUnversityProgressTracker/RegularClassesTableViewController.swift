@@ -11,11 +11,7 @@ import UIKit
 class RegularClassesTableViewController: UITableViewController {
     
     //this should get the classes from the database into an array
-    let regularClassArray = ["Apple", "Apricot", "Banana", "Blueberry", "Cantaloupe", "Cherry",
-                  "Clementine", "Coconut", "Cranberry", "Fig", "Grape", "Grapefruit",
-                  "Kiwi fruit", "Lemon", "Lime", "Lychee", "Mandarine", "Mango",
-                  "Melon", "Nectarine", "Olive", "Orange", "Papaya", "Peach",
-                  "Pear", "Pineapple", "Raspberry", "Strawberry"]
+    let regularClassArray = ["Trap and Roll Escape", "Americana Armlock", "Positional Control", "Take the Back", "Rear Naked Choke", "Leg Hook Takedown","Clinch", "Punch Block", "Straight Armlock", "Triangle Choke", "Elevator Sweep", "Elbow Escape","Positional Control", "Body Fold Takedown", "Clinch (Conservative)", "Headlock Counters", "Double Leg Takedown", "Headlock Escape 1","Straight Armlock (guard)", "Double Ankle Sweep", "Pull Guard", "Headlock Escape 2", "Guillotine Choke", "Shrimp Escape","Kimura Armlock", "Standing Headlock Defense", "Punch Block Series (stage 5)", "Hook Sweep","Rear Takedown"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +32,7 @@ class RegularClassesTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

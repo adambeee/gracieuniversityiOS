@@ -8,12 +8,21 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UIViewController,UIWebViewDelegate {
+    @IBOutlet weak var ClassScheduleWebView: UIWebView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let url = URL(string: "https://secure.gracieacademy.com/schedule/GC_Schedule.pdf")
+        let urlRequest = URLRequest(url: url!)
+        ClassScheduleWebView.loadRequest(urlRequest)
+        
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
+        ClassScheduleWebView.delegate = self
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

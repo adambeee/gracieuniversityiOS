@@ -8,11 +8,22 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController,UIWebViewDelegate {
+    
+    @IBOutlet var GracieUniversityHomePage: UIWebView!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let url = URL(string: "https://www.gracieuniversity.com")
+        let urlRequest = URLRequest(url: url!)
+        GracieUniversityHomePage.loadRequest(urlRequest)
+        
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
+        
+        GracieUniversityHomePage.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,29 +31,12 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+
     
-    @IBAction func WebView(_ sender: Any) {
-        
-        let url = SFSafariViewController(url: URL(string: "https://www.gracieuniversity.com")!)
-        self.present(url, animated: true, completion: nil)
-        
+    
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        activityIndicator.stopAnimating()
     }
-    
-    @IBAction func ClassSchedule(_ sender: Any) {
-        let url1 = SFSafariViewController(url: URL(string: "http://www.gracieacademy.com/training_centers.asp")!)
-        self.present(url1, animated: true, completion: nil)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
 
 }
-
