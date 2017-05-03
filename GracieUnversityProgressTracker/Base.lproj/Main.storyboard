@@ -28,10 +28,32 @@
                                     <segue destination="gp2-8D-inQ" kind="embed" id="Zcg-Zs-yPJ"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AFR-HS-RY4" customClass="CircleProgressView" customModule="CircleProgressView">
+                                <rect key="frame" x="62" y="134" width="250" height="250"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Dwh-Xg-6hU"/>
+                                    <constraint firstAttribute="height" constant="250" id="NvO-kd-2DY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.65000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clockwise" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trackWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="trackImage" value="progressImage"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="centerImage" value="lion"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="dDL-HI-fqY"/>
+                    <connections>
+                        <outlet property="circleProgressView" destination="AFR-HS-RY4" id="dXI-Xq-l93"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -326,6 +348,8 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="lion" width="16" height="16"/>
+        <image name="progressImage" width="16" height="16"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
