@@ -8,11 +8,22 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController,UIWebViewDelegate {
+    
+    @IBOutlet var GracieUniversityHomePage: UIWebView!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let url = URL(string: "https://www.gracieuniversity.com")
+        let urlRequest = URLRequest(url: url!)
+        GracieUniversityHomePage.loadRequest(urlRequest)
+        
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
+        
+        GracieUniversityHomePage.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +32,11 @@ class SecondViewController: UIViewController {
     }
 
 
-}
+    
+    
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        activityIndicator.stopAnimating()
+    }
 
+
+}

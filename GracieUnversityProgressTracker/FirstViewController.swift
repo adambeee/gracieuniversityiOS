@@ -9,17 +9,20 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    
+    let nf = NumberFormatter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        nf.numberStyle = NumberFormatter.Style.decimal
+        nf.maximumFractionDigits = 2
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
-
