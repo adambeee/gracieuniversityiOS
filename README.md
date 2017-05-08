@@ -15,11 +15,20 @@ Once Xcode is downloaded, to download the above source code look at the top righ
 
 Reading Data
 ------------
+
 This application was developed with the intention of reading from a connected database. During development, a database with these properties were utilized. 
 [SQL Database Dump](https://cdn.pbrd.co/images/3BImR8zMv.png)
 Any database will work but will need some external API to insert data into database and pull data for use with this iOS application. The external API can be written in any server-side scripting language but was outside the scope of this project. This software and database sitting in the middle of the gracie university back-end and this client-side application will provide the necessary connections to provide a seamless experience to students. 
+
 Application Overview
 --------
+
+**Dashboard**
+
+
+----------
+
+
 Once downloaded to your Mac System, a double-click on *GracieUniversityProgressTracker.xcodeproj* will open up the project in Xcode. 
 The iOS application is a common four-tabbed application with each tab doing a particular task. 
 The first tab is the dashboard, where a users progress is highlighted by two concentric rings. 
@@ -32,4 +41,57 @@ Progress bar functionality provided by this github project.
 
 Added to swift by including `CircleProgressView.swift` to project. 
 This layout will take student_card object, and use the fields: `stripe_level = 2` and `classes_completed=26` to provide the appropriate progress for that user. 
-Below the dashboard layout is the listing of classes for reference. 
+Below the dashboard layout is the listing of classes for reference. This is provided by querying the `class table` and also the `rd_class table`. 
+
+The amount of rows dictated by the count of classes in the above tables. 
+Re-write the following segment of code in `RegularClassesTableViewController.swift`
+to
+
+     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return regularClassArray.count
+    }
+return to return the number of classes in the table.
+Complete the same in `ReflexDevelopmentTableViewController.swift` for reflex development courses. 
+
+Updating each cell content with name of the classes should result in the following view for names of classes. 
+
+![Regular Classes View](https://preview.ibb.co/gwbjd5/Simulator_Screen_Shot_May_7_2017_7_11_15_PM.png)
+
+Updating cells for reflex development course names should make for a similar result. 
+
+
+**Gracie University Site and Calendar**
+
+
+----------
+
+The next two tabs, Gracie University and Calendar are views for accessing web content within the application itself. 
+
+Within the project are two files, 
+
+    SecondViewController.swift
+and 
+
+    ThirdViewController.swift
+that are both inheriting from the `UIViewController` superclass. 
+
+Each page pulls its content via this block of code in `ViewDidLoad()` for that page.
+
+    let url = URL(string: "https://www.gracieuniversity.com")
+        let urlRequest = URLRequest(url: url!)
+        GracieUniversityHomePage.loadRequest(urlRequest)
+        
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
+        
+        GracieUniversityHomePage.delegate = self
+
+Update url be any linkable content. 
+
+**Settings Tab** 
+
+
+----------
+
+The last page is a demo settings page for any necessary user profile information. This can allow users to enter in, or pull from Apple's Health API, their weight and height to calculate potential calories for each class. This added feature, that can be implemented in the class table, will provide an immersive experience for a student and keep them motivated.
