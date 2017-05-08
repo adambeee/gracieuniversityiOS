@@ -17,8 +17,8 @@ Reading Data
 ------------
 
 This application was developed with the intention of reading from a connected database. During development, a database with these properties were utilized. 
-[SQL Database Dump](https://cdn.pbrd.co/images/3BImR8zMv.png)
-Any database will work but will need some external API to insert data into database and pull data for use with this iOS application. The external API can be written in any server-side scripting language but was outside the scope of this project. This software and database sitting in the middle of the gracie university back-end and this client-side application will provide the necessary connections to provide a seamless experience to students. 
+![SQL Data Dump](https://cdn.pbrd.co/images/3BImR8zMv.png)
+Any database will work but will need some external API to insert data into database and pull data for use with this iOS application. The external API can be written in any server-side scripting language but was outside the scope of this project. This software and database sitting in the middle of the Gracie University back-end and this client-side application will provide the necessary connections to provide a seamless experience to students. 
 
 Application Overview
 --------
@@ -87,7 +87,12 @@ Each page pulls its content via this block of code in `ViewDidLoad()` for that p
         
         GracieUniversityHomePage.delegate = self
 
-Update url be any linkable content. 
+Update url to be any linkable content. 
+
+
+![gracieuniversity.com](https://i.imgur.com/uQ9aSyO.png)
+
+
 
 **Settings Tab** 
 
@@ -95,3 +100,10 @@ Update url be any linkable content.
 ----------
 
 The last page is a demo settings page for any necessary user profile information. This can allow users to enter in, or pull from Apple's Health API, their weight and height to calculate potential calories for each class. This added feature, that can be implemented in the class table, will provide an immersive experience for a student and keep them motivated.
+
+![settings](https://i.imgur.com/PpZYTBR.png)
+
+Conclusions and Support
+-----------------------
+
+Developmental efforts with this application focused mostly on the UI aspect of tracking progress. If Gracie University wanted to implement this application as a part of their students immersive experience, it would need minimal effort to do so. The architecture on how to connect our application to a database is in place, it just needs an API in place to communicate from a back-end system to this iOS application. This application package is offered without any implied support but can be downloaded and changed without permission. 
