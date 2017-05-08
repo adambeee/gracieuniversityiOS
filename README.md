@@ -5,6 +5,16 @@ Getting Started
 ---------------
 This iOS-based application was created to help track progress for students registered in Gracie University's Jiu Jitsu Program. It is important to note that this project is still in its alpha stage and provides a gorgeous iOS-based UI for visualizing progress. 
 
+Documentation Package
+---------------------
+**SRS Document**
+Software Requirements Specification (SRS) document for software package located at : https://drive.google.com/file/d/0B9AUHx1jtWcwMUU5Wk9WTnk5VEk/view
+and provides Gracie University iOS requirements. 
+**Gracie University Prototype**
+Gracie University iOS application prototype located at: 
+https://invis.io/WXBCMWY35 and is the first prototype with requirements. Application designed with this first prototype in mind. 
+
+
 Installation
 ------------
 
